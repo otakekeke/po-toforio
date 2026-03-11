@@ -1,0 +1,146 @@
+{
+  "nav": {
+    "about": "About",
+    "philosophy": "Philosophy",
+    "projects": "Projects",
+    "skills": "Skills",
+    "timeline": "Timeline",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Kotaro Otake",
+    "tagline": "Empowering Society through AI × Care × DX",
+    "subtitle": "Engineer building tech-driven solutions for the care industry",
+    "scroll": "Scroll"
+  },
+  "about": {
+    "title": "About",
+    "description": "I'm a 24-year-old engineer leading the web team of a large-scale core system renewal project at a major care company, managing a team of 10,000+ users' system scope. Simultaneously running my own business \"Takenoko\" — creating custom-built applications for care facilities. I combine project management with AI-powered automation to transform how the care industry operates.",
+    "stats": {
+      "users": "User Scale",
+      "usersValue": "10,000+",
+      "projects": "Projects",
+      "projectsValue": "10+",
+      "clients": "Clients",
+      "clientsValue": "3"
+    }
+  },
+  "philosophy": {
+    "title": "Philosophy",
+    "quote1": "People who choose to continue working in care are rare, incredibly valuable, and noble.",
+    "quote2": "Such talent should never be wasted on mundane paperwork or repetitive analog tasks that anyone could do.",
+    "quote3": "Even as the AI era arrives, care — the ultimate person-to-person work — remains invaluable. It will be the last profession to disappear.",
+    "belief": "Care workers support the very foundation of society. They protect the loved ones of those who keep the world turning — they are critical social infrastructure supporting the heart of our communities.",
+    "mission": "Technology must further empower this noble work."
+  },
+  "projects": {
+    "title": "Projects",
+    "filterAll": "All",
+    "filterCare": "Care",
+    "filterBiz": "Business",
+    "filterAuto": "Automation",
+    "items": {
+      "chant": {
+        "title": "Chant — Core System Renewal",
+        "description": "Leading the web team for a core system renewal project serving 10,000+ users at a major care company. Managing freelance developers, development schedules, specifications, and quality assurance.",
+        "tags": "React, TypeScript, PM",
+        "category": "care"
+      },
+      "rehab": {
+        "title": "Rehab Management App",
+        "description": "Business management app for rehabilitation day services. Built with GAS and Spreadsheets to streamline rehab records and user management. Currently in active production use.",
+        "tags": "GAS, Spreadsheet",
+        "category": "care"
+      },
+      "rehabAssign": {
+        "title": "Rehab Auto-Assignment System",
+        "description": "Automated system that assigns daily rehabilitation items to users based on complex conditions and constraints. Also features automatic care plan transcription and text generation.",
+        "tags": "GAS, GPTs, Automation",
+        "category": "care"
+      },
+      "reqBot": {
+        "title": "Auto Requirements Bot",
+        "description": "System that automatically generates requirements documents through video conversations, then auto-generates and deploys mock applications. Powered by Gemini API with diagram generation and text chat support.",
+        "tags": "Vercel, Gemini API, GAS",
+        "category": "biz"
+      },
+      "puzzleGen": {
+        "title": "Spot-the-Difference Generator",
+        "description": "App that generates spot-the-difference puzzle images as PDFs from photos using Gemini API. Well received as recreational activity content at care facilities.",
+        "tags": "Gemini API, GAS, PDF",
+        "category": "care"
+      },
+      "bizApps": {
+        "title": "Business Efficiency Suite",
+        "description": "A collection of business tools including task management, automated book generation, N1 analysis, and ad creative generation/analysis applications.",
+        "tags": "GAS, Automation, AI",
+        "category": "biz"
+      },
+      "instaDM": {
+        "title": "Instagram Auto-DM",
+        "description": "Script that auto-generates user lists by keyword and sends bulk custom messages. Achieved 2 appointments from 2,000 messages sent.",
+        "tags": "Python, Automation",
+        "category": "auto"
+      },
+      "lp": {
+        "title": "Takenoko Landing Page",
+        "description": "Landing page for 'Takenoko' — a custom app development service tailored for care facilities. Communicates the business concept and service offerings.",
+        "tags": "HTML, CSS, JS",
+        "category": "biz"
+      }
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "ai": "AI / API",
+    "tools": "Tools",
+    "management": "Management"
+  },
+  "timeline": {
+    "title": "Timeline",
+    "items": {
+      "2024_join": {
+        "date": "Apr 2024",
+        "title": "Joined Care Company",
+        "description": "Assigned to the DX Headquarters Project Development Division as a new graduate. Joined as programmer/SE for core system development."
+      },
+      "2024_chant": {
+        "date": "Late 2024",
+        "title": "Joined Project Chant",
+        "description": "Joined the core system renewal project serving 10,000+ users as part of the web team."
+      },
+      "2025_takenoko": {
+        "date": "Early 2025",
+        "title": "Founded Takenoko",
+        "description": "Launched a solo business creating custom-built applications for care facilities. Started client acquisition through sales agencies."
+      },
+      "2025_contract": {
+        "date": "Mid 2025",
+        "title": "First Client Contract",
+        "description": "Signed contract with rehabilitation day service 'Rehab Athletic'. App entered active production use."
+      },
+      "2025_leader": {
+        "date": "Late 2025",
+        "title": "Web Team Leader",
+        "description": "Assumed leadership as key members transitioned out. Became the de facto PM with consolidated resources and decision-making authority."
+      },
+      "2026_now": {
+        "date": "2026 —",
+        "title": "Auto Requirements App",
+        "description": "Developing a system that automates everything from video-based requirements gathering to mock generation. Accelerating DX in the care industry."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "message": "Feel free to reach out for project consultations or inquiries.",
+    "lp": "Visit Takenoko LP",
+    "email": "Send Email"
+  },
+  "footer": {
+    "copyright": "© 2026 Kotaro Otake. All rights reserved."
+  }
+}

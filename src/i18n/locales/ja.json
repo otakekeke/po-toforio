@@ -1,0 +1,146 @@
+{
+  "nav": {
+    "about": "About",
+    "philosophy": "Philosophy",
+    "projects": "Projects",
+    "skills": "Skills",
+    "timeline": "Timeline",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "こんにちは、",
+    "name": "大嶽 耕太郎",
+    "tagline": "AI × 介護 × DX で社会を支える",
+    "subtitle": "介護業界の業務効率化をテクノロジーで実現するエンジニア",
+    "scroll": "Scroll"
+  },
+  "about": {
+    "title": "About",
+    "description": "24歳。介護会社のDX統括部で基幹システム刷新プロジェクトのWebチームリーダーを務めながら、個人で介護事業者向けオーダーメイドアプリの開発・運用事業「嶽ノ子」を展開。10,000人規模のユーザーが利用するシステムのプロジェクトマネジメントと、AIを活用した業務効率化ソリューションの設計・開発を行っている。",
+    "stats": {
+      "users": "ユーザー規模",
+      "usersValue": "10,000+",
+      "projects": "プロジェクト数",
+      "projectsValue": "10+",
+      "clients": "契約顧客",
+      "clientsValue": "3社"
+    }
+  },
+  "philosophy": {
+    "title": "Philosophy",
+    "quote1": "介護という仕事をあえて選んで継続できるような人材は珍しく、とても貴重で崇高である。",
+    "quote2": "そのような人材を誰でもできるような事務作業やくだらないアナログな反復作業に使いたくない。",
+    "quote3": "AI時代が訪れても、人対人の究極の仕事である介護は、高級であり素晴らしい。最後まで無くなることのない仕事。",
+    "belief": "介護職は社会を支えている。社会を動かしているみんなの、大切な人を守るという、社会の心を支える重要な社会インフラの一つ。利用者様に100%の力で向き合うことで、結果的に社会が固まるのだ。",
+    "mission": "この崇高な仕事をITでさらに支える。"
+  },
+  "projects": {
+    "title": "Projects",
+    "filterAll": "すべて",
+    "filterCare": "介護",
+    "filterBiz": "業務効率化",
+    "filterAuto": "自動化",
+    "items": {
+      "chant": {
+        "title": "Chant - 基幹システム刷新PJ",
+        "description": "10,000人規模のユーザーが利用する介護会社の基幹システム刷新プロジェクト。Webチームリーダーとしてフリーランスメンバーをけん引し、開発スケジュール管理・仕様策定・品質管理を統括。",
+        "tags": "React, TypeScript, PM",
+        "category": "care"
+      },
+      "rehab": {
+        "title": "リハビリ管理アプリ",
+        "description": "リハビリデイサービス向けの業務管理アプリ。GASとスプレッドシートを活用し、リハビリ記録・利用者管理を効率化。現在運用中で実際に使用されている。",
+        "tags": "GAS, Spreadsheet",
+        "category": "care"
+      },
+      "rehabAssign": {
+        "title": "リハビリ項目自動割り当て",
+        "description": "複雑な条件・制限に基づいて利用者に毎日リハビリ項目を自動割り当てするシステム。サービス計画書の自動転記・文章生成機能も実装。",
+        "tags": "GAS, GPTs, Automation",
+        "category": "care"
+      },
+      "reqBot": {
+        "title": "自動要件定義Bot",
+        "description": "ビデオ会話を通じて自動で要件定義書を作成し、モックを自動生成・デプロイするシステム。Gemini APIを活用し、全体図生成やテキスト会話にも対応。",
+        "tags": "Vercel, Gemini API, GAS",
+        "category": "biz"
+      },
+      "puzzleGen": {
+        "title": "間違い探し生成アプリ",
+        "description": "Gemini APIを活用して、写真から間違い探し画像をPDFで自動生成するアプリ。介護施設のレクリエーションで好評を得ている。",
+        "tags": "Gemini API, GAS, PDF",
+        "category": "care"
+      },
+      "bizApps": {
+        "title": "業務効率化アプリ群",
+        "description": "タスク管理アプリ、本の自動生成アプリ、N1分析アプリ、広告クリエイティブ自動生成・分析アプリなど、多様な業務効率化ツールを開発。",
+        "tags": "GAS, Automation, AI",
+        "category": "biz"
+      },
+      "instaDM": {
+        "title": "Instagram自動DM",
+        "description": "特定キーワードでユーザーリストを自動作成し、カスタムメッセージを一括送信するスクリプト。2,000件送信で2件のアポイント獲得に成功。",
+        "tags": "Python, Automation",
+        "category": "auto"
+      },
+      "lp": {
+        "title": "嶽ノ子 LP",
+        "description": "介護事業者向けオーダーメイドアプリ開発事業「嶽ノ子」のランディングページ。事業コンセプトとサービス内容を訴求。",
+        "tags": "HTML, CSS, JS",
+        "category": "biz"
+      }
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "ai": "AI / API",
+    "tools": "Tools",
+    "management": "Management"
+  },
+  "timeline": {
+    "title": "Timeline",
+    "items": {
+      "2024_join": {
+        "date": "2024年4月",
+        "title": "介護会社入社",
+        "description": "DX統括部プロジェクト開発課に新卒配属。プログラマ/SEとして基幹システム開発に参画。"
+      },
+      "2024_chant": {
+        "date": "2024年後期",
+        "title": "Chantプロジェクト参画",
+        "description": "10,000人規模の基幹システム刷新プロジェクトにWebチームとして参画。"
+      },
+      "2025_takenoko": {
+        "date": "2025年初頭",
+        "title": "嶽ノ子 事業開始",
+        "description": "介護事業者向けオーダーメイドアプリ開発事業を個人で立ち上げ。営業代行を活用した集客を開始。"
+      },
+      "2025_contract": {
+        "date": "2025年中期",
+        "title": "初回契約獲得",
+        "description": "リハビリデイサービス「リハビリアスレチック」と契約。アプリが実際に運用開始。"
+      },
+      "2025_leader": {
+        "date": "2025年後期",
+        "title": "Webチームリーダー就任",
+        "description": "主要メンバーの異動に伴い、プロジェクトのリソースと決定権が集約。実質的なPMとしての役割を担う。"
+      },
+      "2026_now": {
+        "date": "2026年〜",
+        "title": "自動要件定義アプリ開発",
+        "description": "ビデオ会話で要件定義からモック生成までを自動化するシステムを開発中。介護業界のDXをさらに加速。"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "message": "プロジェクトのご相談やお問い合わせはお気軽にどうぞ。",
+    "lp": "嶽ノ子 LP を見る",
+    "email": "メールを送る"
+  },
+  "footer": {
+    "copyright": "© 2026 Kotaro Otake. All rights reserved."
+  }
+}
