@@ -38,14 +38,15 @@ function AnimatedValue({ rawValue }: { rawValue: string }) {
   return <span ref={ref}>{display}</span>
 }
 
-const STAT_KEYS = ['users', 'projects', 'clients'] as const
+const STAT_KEYS = ['users', 'projects', 'domains'] as const
+const TRACK_KEYS = ['system', 'careDx', 'publishing', 'takenoko'] as const
 
 export default function About() {
   const { t } = useTranslation()
 
   return (
     <section id="about" className="px-6 py-32">
-      <div className="mx-auto max-w-4xl">
+      <div className="mx-auto max-w-5xl">
         <ScrollReveal>
           <h2 className="mb-4 text-xs font-medium tracking-[0.2em] text-muted uppercase">
             {t('about.title')}
@@ -53,12 +54,12 @@ export default function About() {
         </ScrollReveal>
 
         <ScrollReveal delay={0.1}>
-          <p className="mb-16 max-w-2xl text-lg leading-relaxed text-primary/80">
+          <p className="mb-16 max-w-3xl text-lg leading-relaxed text-primary/80">
             {t('about.description')}
           </p>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
+        <div className="mb-20 grid grid-cols-1 gap-8 sm:grid-cols-3">
           {STAT_KEYS.map((key, i) => (
             <ScrollReveal key={key} delay={0.15 + i * 0.1}>
               <div className="border-t border-border pt-6">
@@ -67,6 +68,30 @@ export default function About() {
                 </p>
                 <p className="text-4xl font-bold tracking-tight">
                   <AnimatedValue rawValue={t(`about.stats.${key}Value`)} />
+                </p>
+              </div>
+            </ScrollReveal>
+          ))}
+        </div>
+
+        <ScrollReveal delay={0.2}>
+          <h3 className="mb-8 text-xs font-medium tracking-[0.2em] text-muted uppercase">
+            {t('about.tracksTitle')}
+          </h3>
+        </ScrollReveal>
+
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+          {TRACK_KEYS.map((key, i) => (
+            <ScrollReveal key={key} delay={0.25 + i * 0.08}>
+              <div className="group rounded-2xl border border-border bg-white p-6 transition-all hover:border-accent/30 hover:shadow-md">
+                <span className="mb-3 block text-3xl font-bold text-accent/20">
+                  {t(`about.tracks.${key}.label`)}
+                </span>
+                <h4 className="mb-2 text-base font-semibold tracking-tight">
+                  {t(`about.tracks.${key}.title`)}
+                </h4>
+                <p className="text-sm leading-relaxed text-muted">
+                  {t(`about.tracks.${key}.description`)}
                 </p>
               </div>
             </ScrollReveal>

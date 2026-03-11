@@ -8,6 +8,10 @@ interface SkillCategory {
 
 const SKILLS: SkillCategory[] = [
   {
+    tKey: 'research',
+    items: ['Brain-Computer Interface', 'EEG Signal Processing', 'Data Augmentation', 'Machine Learning', 'Python'],
+  },
+  {
     tKey: 'frontend',
     items: ['React', 'TypeScript', 'JavaScript', 'HTML/CSS', 'Tailwind CSS', 'Vite'],
   },
@@ -17,7 +21,7 @@ const SKILLS: SkillCategory[] = [
   },
   {
     tKey: 'ai',
-    items: ['Gemini API', 'OpenAI API', 'GPTs', 'Prompt Engineering'],
+    items: ['Gemini API', 'OpenAI API', 'GPTs', 'Meta Marketing API', 'Prompt Engineering'],
   },
   {
     tKey: 'tools',
@@ -25,7 +29,7 @@ const SKILLS: SkillCategory[] = [
   },
   {
     tKey: 'management',
-    items: ['Scrum', 'PMBOK', 'Requirements Definition', 'Quality Assurance', 'Team Lead'],
+    items: ['Scrum', 'PMBOK', 'Requirements Definition', 'Quality Assurance', 'Team Lead', 'Sub-Leader'],
   },
 ]
 

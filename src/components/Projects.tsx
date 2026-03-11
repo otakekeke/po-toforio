@@ -4,14 +4,16 @@ import { motion, AnimatePresence } from 'framer-motion'
 import ScrollReveal from './ScrollReveal'
 
 const PROJECT_KEYS = [
-  'chant', 'rehab', 'rehabAssign', 'reqBot',
-  'puzzleGen', 'bizApps', 'instaDM', 'lp',
+  'chant', 'bciGame', 'eegAugmentation', 'logisticsDx',
+  'publishingAi', 'metaAds', 'rehab', 'rehabAssign',
+  'reqBot', 'puzzleGen', 'instaDM',
 ] as const
 
 const FILTERS = [
   { key: 'all', tKey: 'filterAll' },
   { key: 'care', tKey: 'filterCare' },
-  { key: 'biz', tKey: 'filterBiz' },
+  { key: 'research', tKey: 'filterResearch' },
+  { key: 'dx', tKey: 'filterDx' },
   { key: 'auto', tKey: 'filterAuto' },
 ] as const
 

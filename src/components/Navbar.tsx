@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useScrollSpy } from '../hooks/useScrollSpy'
 import LanguageSwitcher from './LanguageSwitcher'
 
-const NAV_ITEMS = ['about', 'philosophy', 'projects', 'skills', 'timeline', 'contact'] as const
+const NAV_ITEMS = ['about', 'values', 'projects', 'skills', 'timeline', 'contact'] as const
 
 export default function Navbar() {
   const { t } = useTranslation()

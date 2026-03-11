@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-const SECTIONS = ['hero', 'about', 'philosophy', 'projects', 'skills', 'timeline', 'contact']
+const SECTIONS = ['hero', 'about', 'values', 'projects', 'skills', 'timeline', 'contact']
 
 export function useScrollSpy() {
   const [active, setActive] = useState('hero')

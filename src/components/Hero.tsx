@@ -1,10 +1,20 @@
-import { useRef, useCallback } from 'react'
-import { motion, useMotionValue, useSpring } from 'framer-motion'
+import { useRef, useCallback, useState, useEffect } from 'react'
+import { motion, useMotionValue, useSpring, AnimatePresence } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 
 export default function Hero() {
   const { t } = useTranslation()
   const containerRef = useRef<HTMLElement>(null)
+  const [domainIndex, setDomainIndex] = useState(0)
+
+  const domains = t('hero.domains', { returnObjects: true }) as string[]
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setDomainIndex((prev) => (prev + 1) % domains.length)
+    }, 2600)
+    return () => clearInterval(interval)
+  }, [domains.length])
 
   const mouseX = useMotionValue(0)
   const mouseY = useMotionValue(0)
@@ -42,7 +52,6 @@ export default function Hero() {
       onMouseMove={handleMouseMove}
       className="relative flex min-h-screen items-center justify-center overflow-hidden px-6"
     >
-      {/* Dot grid background */}
       <div
         className="absolute inset-0 opacity-[0.03]"
         style={{
@@ -51,7 +60,6 @@ export default function Hero() {
         }}
       />
 
-      {/* Mouse-follow gradient */}
       <motion.div
         className="pointer-events-none absolute h-[500px] w-[500px] rounded-full opacity-[0.07]"
         style={{
@@ -69,13 +77,6 @@ export default function Hero() {
         initial="hidden"
         animate="show"
       >
-        <motion.p
-          variants={fadeUp}
-          className="mb-3 text-sm font-medium tracking-[0.2em] text-muted uppercase"
-        >
-          {t('hero.greeting')}
-        </motion.p>
-
         <motion.h1
           variants={fadeUp}
           className="mb-6 text-5xl font-bold tracking-tight sm:text-7xl lg:text-8xl"
@@ -85,17 +86,28 @@ export default function Hero() {
 
         <motion.p
           variants={fadeUp}
-          className="mb-4 text-lg font-medium text-accent sm:text-xl"
+          className="mb-6 text-lg font-medium text-primary/80 sm:text-xl"
         >
           {t('hero.tagline')}
         </motion.p>
 
-        <motion.p
+        <motion.div
           variants={fadeUp}
-          className="mx-auto max-w-lg text-sm leading-relaxed text-muted sm:text-base"
+          className="flex h-8 items-center justify-center"
         >
-          {t('hero.subtitle')}
-        </motion.p>
+          <AnimatePresence mode="wait">
+            <motion.span
+              key={domainIndex}
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -12 }}
+              transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] as const }}
+              className="text-sm font-medium tracking-[0.15em] text-accent uppercase sm:text-base"
+            >
+              {domains[domainIndex]}
+            </motion.span>
+          </AnimatePresence>
+        </motion.div>
 
         <motion.div
           variants={fadeUp}
